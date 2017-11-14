@@ -15,7 +15,7 @@ public class WriteToDocument
 
     public static void writeExampleOne() throws IOException
     {
-        String test = "You can also add text this way Mr Thomas & Danni";
+        String test = "Netbeans is better then anything";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
         {
             writer.write("Hello?");
