@@ -11,13 +11,15 @@ import java.util.Scanner;
 /**
  * @author ddose
  */
-public class Main {
+public class Main
+{
 
     /**
      * @param args the command line arguments
      * @throws java.io.FileNotFoundException
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws FileNotFoundException, IOException
+    {
         CountLines countlines = new CountLines();
         countlines.getCountedLines();
 
@@ -32,13 +34,16 @@ public class Main {
 //                FunWithFiles.readExampleThree();
         //        Main.writeExampleOne();
         System.out.println("Done!");
+        System.out.println("Done!");
     }
 
-    public static void readExampleOne() throws FileNotFoundException {
+    public static void readExampleOne() throws FileNotFoundException
+    {
         File f = new File("brit-a-z.txt");
         Scanner sc = new Scanner(f);
         int countLines = 0;
-        while (sc.hasNext()) {
+        while (sc.hasNext())
+        {
             countLines++;
             String line = sc.nextLine();
             System.out.println(line);
@@ -47,7 +52,8 @@ public class Main {
 
     }
 
-    public static void readExampleTwo() throws FileNotFoundException {
+    public static void readExampleTwo() throws FileNotFoundException
+    {
         File f = new File("C:\\Users\\Thomas\\OneDrive\\Programming\\Java\\FunWithFiles\\brit-a-z.txt");
         Scanner sc = new Scanner(new BufferedReader(new FileReader(f)));
         int count = 0;
