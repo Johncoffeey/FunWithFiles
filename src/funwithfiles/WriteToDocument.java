@@ -18,7 +18,7 @@ public class WriteToDocument
 
     public static void writeExampleOne() throws IOException
     {
-        String test = "You can also add text this way";
+        String test = "You can also add text this way Mr Thomas";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
         {
             writer.write("Hello?");
