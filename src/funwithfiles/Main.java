@@ -5,28 +5,19 @@
  */
 package funwithfiles;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 /**
- *
  * @author ddose
  */
-public class Main
-{
+public class Main {
 
     /**
      * @param args the command line arguments
      * @throws java.io.FileNotFoundException
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException
-    {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         CountLines countlines = new CountLines();
         countlines.getCountedLines();
 
@@ -43,13 +34,11 @@ public class Main
         System.out.println("Done!");
     }
 
-    public static void readExampleOne() throws FileNotFoundException
-    {
+    public static void readExampleOne() throws FileNotFoundException {
         File f = new File("brit-a-z.txt");
         Scanner sc = new Scanner(f);
         int countLines = 0;
-        while (sc.hasNext())
-        {
+        while (sc.hasNext()) {
             countLines++;
             String line = sc.nextLine();
             System.out.println(line);
@@ -58,9 +47,8 @@ public class Main
 
     }
 
-    public static void readExampleTwo() throws FileNotFoundException
-    {
-        File f = new File("C:\\Users\\ddose\\OneDrive\\Datamatiker\\1. Sem\\SCO - Software Construction\\NetBeans\\Brit\\brit-a-z.txt");
+    public static void readExampleTwo() throws FileNotFoundException {
+        File f = new File("C:\\Users\\Thomas\\OneDrive\\Programming\\Java\\FunWithFiles\\brit-a-z.txt");
         Scanner sc = new Scanner(new BufferedReader(new FileReader(f)));
         int count = 0;
         while (sc.hasNext())

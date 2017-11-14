@@ -5,22 +5,16 @@
  */
 package funwithfiles;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 /**
- *
  * @author Danni
  */
-public class WriteToDocument
-{
+class WriteToDocument {
 
-    public static void writeExampleOne() throws IOException
-    {
-        String test = "You can also add text this way Mr Thomas";
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
-        {
+    static void writeExampleOne() throws IOException {
+        String test = "You can also add text this way Mr Thomas & Danni";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
             writer.write("Hello?");
             writer.newLine();
             writer.write("Can you hear me?");
